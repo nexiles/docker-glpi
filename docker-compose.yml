@@ -14,8 +14,8 @@ services:
       MYSQL_USER: glpi
     volumes:
     - glpi-db:/var/lib/mysql
-    ports:
-    - 32806:3306/tcp
+#   ports:
+#   - 32806:3306/tcp
   glpi:
     build: ./
     image: fjudith/glpi:9.2.1-apache
